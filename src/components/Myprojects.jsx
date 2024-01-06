@@ -72,7 +72,7 @@ function Myprojects() {
                     
 
                     {
-                userProject?.length>0 &&
+                userProject?.length>0 ?
                 userProject.map((items)=>(
                     <div  className="d-flex border  justify-content-between rounded mt-2" style={{padding:'10px'}}>
                     <h6 className='d-flex'>{items.title}</h6>
@@ -82,13 +82,13 @@ function Myprojects() {
                         <button onClick={()=>handleDelete(items._id)} className='btn'><i style={{color:'red'}}class="fa-solid fa-trash"></i></button>
                     </div>
                     </div>
-                ))
+                )):<p style={{color:'red'}}>No project uploaded yet!!</p>
                 }
 
                 </div>
             </div>
             <br></br>
-            <p style={{color:'red'}}>No project uploaded yet!!</p>
+            
         </div>
     )
 }

@@ -18,7 +18,7 @@ function ProjectCard({homeProject}) {
                
                  
                         <div class="card ms-5" style={{ width: '400px' }}>
-                            <img src={homeProject ? `${BASE_URL}/uploads/${homeProject.image}` : image} class="card-img-top" alt="Fissure in Sandstone" onClick={handleShow} />
+                            <img height="250" src={homeProject ? `${BASE_URL}/uploads/${homeProject.image}` : image} class="card-img-top" alt="Fissure in Sandstone" onClick={handleShow} />
                             <div class="card-body">
                                 <h5 class="card-title text-center">{homeProject.title}</h5>
 
